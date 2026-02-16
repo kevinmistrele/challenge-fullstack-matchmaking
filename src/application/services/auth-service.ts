@@ -1,5 +1,5 @@
-import { tokenStorage } from './token-storage';
 import { logger } from './logger';
+import { tokenStorage } from './token-storage';
 
 class AuthService {
   login(accessToken: string, refreshToken: string) {

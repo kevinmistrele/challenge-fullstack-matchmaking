@@ -1,5 +1,7 @@
 import { useQuery } from '@tanstack/react-query';
+
 import { api } from '@application/api/client';
+
 import type { User } from '../rules/validate-user';
 
 async function fetchUsers(): Promise<User[]> {

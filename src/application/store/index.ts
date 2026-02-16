@@ -1,5 +1,6 @@
 import { configureStore } from '@reduxjs/toolkit';
 import createSagaMiddleware from 'redux-saga';
+
 import appReducer from './slices/app-slice';
 
 const sagaMiddleware = createSagaMiddleware();

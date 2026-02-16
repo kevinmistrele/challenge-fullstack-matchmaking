@@ -4,9 +4,78 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4750732b-26ec-47c6-8a85-0d70aecd543d" name="Changes" comment="feat: update workspace configuration and remove unused react.svg">
+    <list default="true" id="4750732b-26ec-47c6-8a85-0d70aecd543d" name="Changes" comment="feat: update workspace configuration and add ESLint integration">
+      <change afterPath="$PROJECT_DIR$/src/vite-env.d.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/ci-cd.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/ci-cd.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/eslint.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/eslint.config.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/api/client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/api/client.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/providers/app-provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/providers/app-provider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/services/auth-service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/services/auth-service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/utils/cn.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/utils/cn.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/layout/route/error-fallback.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/layout/route/error-fallback.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/accordion.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/alert-dialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/alert-dialog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/alert.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/alert.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/aspect-ratio.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/aspect-ratio.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/avatar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/avatar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/badge.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/badge.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/breadcrumb.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/breadcrumb.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/button-group.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button-group.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/calendar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/calendar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/carousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/checkbox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/checkbox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/collapsible.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/collapsible.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/combobox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/combobox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/command.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/command.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/context-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/context-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/dialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/dialog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/direction.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/direction.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/dropdown-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/dropdown-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/field.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/field.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/hover-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/hover-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/input-group.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/input-group.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/input-otp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/input-otp.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/label.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/label.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/menubar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/menubar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/native-select.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/native-select.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/navigation-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/navigation-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/pagination.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/pagination.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/popover.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/popover.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/progress.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/progress.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/radio-group.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/radio-group.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/scroll-area.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/scroll-area.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/select.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/select.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/separator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/separator.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/sheet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/sheet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/slider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/slider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/sonner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/sonner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/switch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/switch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/tabs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/tabs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/toggle-group.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/toggle-group.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/toggle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/toggle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/tooltip.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/tooltip.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/users/hooks/use-mobile.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/users/hooks/use-mobile.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/users/hooks/use-users-data.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/users/hooks/use-users-data.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/guards/auth-guard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/guards/auth-guard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/guards/guest-guard.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/guards/guest-guard.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/auth/login.screen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/auth/login.screen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/screens/dashboard/dashboard.screen.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/screens/dashboard/dashboard.screen.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/mocks/server.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/mocks/server.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/setup.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/setup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,11 +148,11 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kevin\WebstormProjects\standard-web-seed\src" />
+      <recent name="C:\Users\Kevin\WebstormProjects\standard-web-seed\src\features\users" />
+      <recent name="C:\Users\Kevin\WebstormProjects\standard-web-seed\src\features" />
       <recent name="C:\Users\Kevin\WebstormProjects\standard-web-seed\src\screens" />
       <recent name="C:\Users\Kevin\WebstormProjects\standard-web-seed\src\components\layout\route" />
-      <recent name="C:\Users\Kevin\WebstormProjects\standard-web-seed\src\routes" />
-      <recent name="C:\Users\Kevin\WebstormProjects\standard-web-seed\src\features\users\hooks" />
-      <recent name="C:\Users\Kevin\WebstormProjects\standard-web-seed\src\application\utils" />
     </key>
   </component>
   <component name="SharedIndexes">
@@ -102,7 +171,8 @@
       <updated>1771160193389</updated>
       <workItem from="1771160194429" duration="4263000" />
       <workItem from="1771237170141" duration="7468000" />
-      <workItem from="1771256786330" duration="1615000" />
+      <workItem from="1771256786330" duration="1856000" />
+      <workItem from="1771259418032" duration="2021000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: standardize import statements and formatting across components">
       <option name="closed" value="true" />
@@ -440,15 +510,29 @@
       <option name="project" value="LOCAL" />
       <updated>1771258118890</updated>
     </task>
-    <option name="localTasksCounter" value="43" />
+    <task id="LOCAL-00043" summary="feat: refine ESLint configuration by removing unnecessary comments and ensuring prettier integration">
+      <option name="closed" value="true" />
+      <created>1771258425990</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1771258425990</updated>
+    </task>
+    <task id="LOCAL-00044" summary="feat: update workspace configuration and add ESLint integration">
+      <option name="closed" value="true" />
+      <created>1771258431646</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1771258431646</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add logger service and API mock handlers for testing" />
-    <MESSAGE value="feat: add logger service, API mock handlers, and route definitions" />
     <MESSAGE value="feat: add API mock handlers for user listing and login simulation" />
     <MESSAGE value="feat: implement logger service and add routing configuration" />
     <MESSAGE value="feat: add redux-saga middleware to store configuration" />
@@ -472,7 +556,9 @@
     <MESSAGE value="feat: enhance Developer Guide with Continuous Deployment setup and Preview Environments" />
     <MESSAGE value="feat: update Vite configuration to use V8 as coverage provider" />
     <MESSAGE value="feat: update workspace configuration and remove unused react.svg" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update workspace configuration and remove unused react.svg" />
+    <MESSAGE value="feat: refine ESLint configuration by removing unnecessary comments and ensuring prettier integration" />
+    <MESSAGE value="feat: update workspace configuration and add ESLint integration" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update workspace configuration and add ESLint integration" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>

@@ -9,6 +9,8 @@ import prettierPlugin from 'eslint-plugin-prettier';
 
 export default tseslint.config(
   { ignores: ['dist'] },
+
+  // 🔒 STRICT DOMAIN RULES
   {
     extends: [js.configs.recommended, ...tseslint.configs.recommended],
     files: ['**/*.{ts,tsx}'],
@@ -24,7 +26,9 @@ export default tseslint.config(
     },
     rules: {
       ...reactHooks.configs.recommended.rules,
+
       'prettier/prettier': 'error',
+
       'react-refresh/only-export-components': ['warn', { allowConstantExport: true }],
 
       'max-lines-per-function': ['error', { max: 50, skipBlankLines: true, skipComments: true }],
@@ -32,7 +36,7 @@ export default tseslint.config(
       'no-console': 'warn',
 
       'import-helpers/order-imports': [
-        'warn',
+        'error',
         {
           newlinesBetween: 'always',
           groups: [
@@ -42,6 +46,7 @@ export default tseslint.config(
             '/^@screens/',
             '/^@components/',
             '/^@types/',
+            '/^@\\//',
             ['parent', 'sibling', 'index'],
           ],
           alphabetize: { order: 'asc', ignoreCase: true },
@@ -49,5 +54,19 @@ export default tseslint.config(
       ],
     },
   },
+
+  // 🧩 DESIGN SYSTEM FLEXIBILITY
+  {
+    files: ['src/components/ui/**/*.{ts,tsx}'],
+    rules: {
+      'max-lines-per-function': 'off',
+      complexity: 'off',
+      '@typescript-eslint/no-explicit-any': 'off',
+      '@typescript-eslint/no-unused-vars': 'off',
+      'react-hooks/purity': 'off',
+      'react-refresh/only-export-components': 'off',
+    },
+  },
+
   eslintConfigPrettier,
 );

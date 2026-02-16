@@ -1,10 +1,10 @@
-import axios from 'axios';
+import axios, { AxiosError, InternalAxiosRequestConfig } from 'axios';
 import { toast } from 'sonner';
 
 import { authService } from '../services/auth-service';
 import { logger } from '../services/logger';
 
-export const apiClient = axios.create({
+export const api = axios.create({
   baseURL: import.meta.env.VITE_API_URL,
 });
 
@@ -12,7 +12,7 @@ export const apiClient = axios.create({
    REQUEST INTERCEPTOR
 ========================= */
 
-apiClient.interceptors.request.use((config) => {
+api.interceptors.request.use((config) => {
   const token = authService.getAccessToken();
 
   if (token) {
@@ -26,34 +26,43 @@ apiClient.interceptors.request.use((config) => {
    RESPONSE INTERCEPTOR
 ========================= */
 
-let isRefreshing = false;
-let failedQueue: any[] = [];
+type FailedRequest = {
+  resolve: (token: string | null) => void;
+  reject: (error: unknown) => void;
+};
 
-function processQueue(error: any, token: string | null) {
-  failedQueue.forEach((prom) => {
+let isRefreshing = false;
+let failedQueue: FailedRequest[] = [];
+
+function processQueue(error: unknown, token: string | null) {
+  failedQueue.forEach(({ resolve, reject }) => {
     if (error) {
-      prom.reject(error);
+      reject(error);
     } else {
-      prom.resolve(token);
+      resolve(token);
     }
   });
 
   failedQueue = [];
 }
 
-apiClient.interceptors.response.use(
+api.interceptors.response.use(
   (response) => response,
-  async (error) => {
-    const originalRequest = error.config;
+  async (error: AxiosError) => {
+    const originalRequest = error.config as InternalAxiosRequestConfig & {
+      _retry?: boolean;
+    };
 
     if (error.response?.status === 401 && !originalRequest._retry) {
       if (isRefreshing) {
-        return new Promise((resolve, reject) => {
+        return new Promise<string | null>((resolve, reject) => {
           failedQueue.push({ resolve, reject });
         })
           .then((token) => {
-            originalRequest.headers.Authorization = `Bearer ${token}`;
-            return apiClient(originalRequest);
+            if (token) {
+              originalRequest.headers.Authorization = `Bearer ${token}`;
+            }
+            return api(originalRequest);
           })
           .catch((err) => Promise.reject(err));
       }
@@ -66,14 +75,16 @@ apiClient.interceptors.response.use(
       if (newToken) {
         processQueue(null, newToken);
         originalRequest.headers.Authorization = `Bearer ${newToken}`;
-        return apiClient(originalRequest);
+        isRefreshing = false;
+        return api(originalRequest);
       }
 
       processQueue(error, null);
+      isRefreshing = false;
     }
 
     logger.error('API Error', error);
-    toast.error(error.response?.data?.message || 'Erro inesperado');
+    toast.error((error.response?.data as { message?: string })?.message || 'Erro inesperado');
 
     return Promise.reject(error);
   },

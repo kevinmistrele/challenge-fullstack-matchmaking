@@ -1,6 +1,7 @@
 import '@testing-library/jest-dom';
-import { afterAll, afterEach, beforeAll } from 'vitest';
 import { cleanup } from '@testing-library/react';
+import { afterAll, afterEach, beforeAll } from 'vitest';
+
 // Import server created in src/mocks/server.ts
 import { server } from './mocks/server';
 

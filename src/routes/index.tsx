@@ -1,13 +1,14 @@
 import { createBrowserRouter } from 'react-router-dom';
 
-import { ROUTES } from './route-paths';
-import { AuthGuard } from './guards/auth-guard';
-import { GuestGuard } from './guards/guest-guard';
-
 import { LoginScreen } from '@screens/auth/login.screen';
 import { DashboardScreen } from '@screens/dashboard/dashboard.screen';
-import { AuthLayout } from '@components/layout/route/auth-layout';
+
 import { AppLayout } from '@components/layout/route/app-layout';
+import { AuthLayout } from '@components/layout/route/auth-layout';
+
+import { AuthGuard } from './guards/auth-guard';
+import { GuestGuard } from './guards/guest-guard';
+import { ROUTES } from './route-paths';
 
 export const router = createBrowserRouter([
   {
