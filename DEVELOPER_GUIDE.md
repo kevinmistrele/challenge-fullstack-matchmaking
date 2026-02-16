@@ -176,6 +176,16 @@ The pluggable logging system shows concern about what happens after deployment.
 ### 3️⃣ Strong Contracts
 Using Zod combined with Logger demonstrates professional error handling instead of silent `try/catch` blocks.
 
+## 🚀 Continuous Deployment (CD)
+The deployment pipeline is triggered automatically after the **Quality Gate (CI)** passes on the `main` branch.
+
+### Setting up a new provider:
+1. Choose your provider (Vercel, Netlify, AWS).
+2. Add the required credentials (e.g., `VERCEL_TOKEN`, `AWS_ACCESS_KEY`) to your **GitHub Repository Secrets**.
+3. Update the `deploy` job in `.github/workflows/ci.yml` with the provider's CLI command.
+
+### Preview Environments:
+For a truly professional workflow, it is recommended to enable **Preview Deployments** for Pull Requests. This allows reviewers to see the changes live before merging.
 ---
 
 ## 📦 Project Philosophy
@@ -191,3 +201,4 @@ This seed is built to:
 ---
 
 > If you’re extending this template, always prioritize maintainability over speed.
+
