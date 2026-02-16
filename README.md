@@ -47,3 +47,18 @@ src/
 ├── components/      # Global Design System (UI & Layout)
 ├── routes/          # Navigation Configuration
 └── types/           # Global TypeScript Contracts
+```
+
+## 🧪 Testing Strategy
+
+The project implements a comprehensive testing pyramid:
+
+* **Unit & Integration**: Powered by **Vitest** + **React Testing Library**.
+* **API Mocking**: **MSW (Mock Service Worker)** for network-level interception.
+* **E2E Testing**: **Playwright** for real-user journey validation across Chromium, Firefox, and WebKit.
+
+To run all tests:
+```bash
+npm run test        # Unit tests
+npm run test:e2e    # E2E tests
+```
