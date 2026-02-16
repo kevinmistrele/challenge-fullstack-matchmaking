@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4750732b-26ec-47c6-8a85-0d70aecd543d" name="Changes" comment="feat: update workspace configuration and remove unused react.svg">
-      <change afterPath="$PROJECT_DIR$/.github/workflows/ci-cd.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.github/workflows/ci.yml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DEVELOPER_GUIDE.md" beforeDir="false" afterPath="$PROJECT_DIR$/DEVELOPER_GUIDE.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/eslint.config.js" beforeDir="false" afterPath="$PROJECT_DIR$/eslint.config.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,7 +102,7 @@
       <updated>1771160193389</updated>
       <workItem from="1771160194429" duration="4263000" />
       <workItem from="1771237170141" duration="7468000" />
-      <workItem from="1771256786330" duration="1197000" />
+      <workItem from="1771256786330" duration="1615000" />
     </task>
     <task id="LOCAL-00001" summary="refactor: standardize import statements and formatting across components">
       <option name="closed" value="true" />
@@ -403,16 +400,53 @@
       <option name="project" value="LOCAL" />
       <updated>1771257400371</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="feat: add CI/CD pipeline configuration for quality assurance and deployment">
+      <option name="closed" value="true" />
+      <created>1771258102452</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1771258102452</updated>
+    </task>
+    <task id="LOCAL-00039" summary="feat: enhance Developer Guide with Continuous Deployment setup and Preview Environments">
+      <option name="closed" value="true" />
+      <created>1771258105730</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1771258105730</updated>
+    </task>
+    <task id="LOCAL-00040" summary="feat: update Vite configuration to use V8 as coverage provider">
+      <option name="closed" value="true" />
+      <created>1771258109015</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1771258109015</updated>
+    </task>
+    <task id="LOCAL-00041" summary="feat: update workspace configuration and remove unused react.svg">
+      <option name="closed" value="true" />
+      <created>1771258113233</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1771258113233</updated>
+    </task>
+    <task id="LOCAL-00042" summary="feat: update workspace configuration and remove unused react.svg">
+      <option name="closed" value="true" />
+      <created>1771258118890</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1771258118890</updated>
+    </task>
+    <option name="localTasksCounter" value="43" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add AuthService for managing authentication and token handling" />
-    <MESSAGE value="feat: enhance API client with authentication and error handling interceptors" />
-    <MESSAGE value="feat: add logging service and API mock handlers for testing" />
     <MESSAGE value="feat: add logger service and API mock handlers for testing" />
     <MESSAGE value="feat: add logger service, API mock handlers, and route definitions" />
     <MESSAGE value="feat: add API mock handlers for user listing and login simulation" />
@@ -434,6 +468,9 @@
     <MESSAGE value="remove react.svg" />
     <MESSAGE value="feat: add CI configuration for quality assurance and testing" />
     <MESSAGE value="feat: add comprehensive Developer Guide for project standards and practices" />
+    <MESSAGE value="feat: add CI/CD pipeline configuration for quality assurance and deployment" />
+    <MESSAGE value="feat: enhance Developer Guide with Continuous Deployment setup and Preview Environments" />
+    <MESSAGE value="feat: update Vite configuration to use V8 as coverage provider" />
     <MESSAGE value="feat: update workspace configuration and remove unused react.svg" />
     <option name="LAST_COMMIT_MESSAGE" value="feat: update workspace configuration and remove unused react.svg" />
   </component>
