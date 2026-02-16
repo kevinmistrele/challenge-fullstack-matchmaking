@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
+    "types": ["vitest/globals", "@testing-library/jest-dom"],
     "paths": {
       "@/*": ["./src/*"],
       "@application/*": ["./src/application/*"],
@@ -10,9 +11,7 @@
       "@types/*": ["./src/types/*"]
     }
   },
+  "include": ["src", "src/test/setup.ts"],
   "files": [],
-  "references": [
-    { "path": "./tsconfig.app.json" },
-    { "path": "./tsconfig.node.json" }
-  ]
+  "references": [{ "path": "./tsconfig.app.json" }, { "path": "./tsconfig.node.json" }]
 }
