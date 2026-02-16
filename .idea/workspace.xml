@@ -5,17 +5,91 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4750732b-26ec-47c6-8a85-0d70aecd543d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.env.example" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/api/client.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/providers/QueryProvider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/providers/app-provider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/store/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/store/slices/app-slice.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/page-container.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/users/hooks/use-users-data.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/features/users/rules/validate-user.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/app-routes.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/services/auth-service.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/services/logger/index.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/services/logger/types.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/services/token-storage.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/application/store/slices/app-slice.test.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/route/app-layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/route/auth-layout.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/layout/route/error-fallback.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/guards/auth-guard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/guards/guest-guard.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes/route-paths.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/auth/login.screen.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/screens/dashboard/dashboard.screen.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/mocks/handlers.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/mocks/server.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/setup.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/api/client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/api/client.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/providers/QueryProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/providers/QueryProvider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/providers/app-provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/providers/app-provider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/store/index.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/application/store/slices/app-slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/store/slices/app-slice.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/assets/react.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/accordion.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/alert-dialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/alert-dialog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/alert.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/alert.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/avatar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/avatar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/badge.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/badge.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/breadcrumb.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/breadcrumb.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/button-group.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button-group.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/calendar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/calendar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/carousel.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/chart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/chart.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/checkbox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/checkbox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/combobox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/combobox.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/command.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/command.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/context-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/context-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/dialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/dialog.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/drawer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/drawer.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/dropdown-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/dropdown-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/empty.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/empty.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/field.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/field.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/form.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/hover-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/hover-card.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/input-group.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/input-group.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/input-otp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/input-otp.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/input.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/item.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/kbd.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/kbd.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/label.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/label.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/menubar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/menubar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/native-select.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/native-select.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/navigation-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/navigation-menu.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/pagination.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/pagination.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/popover.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/popover.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/progress.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/progress.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/radio-group.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/radio-group.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/resizable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/resizable.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/scroll-area.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/scroll-area.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/select.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/select.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/separator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/separator.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/sheet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/sheet.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/skeleton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/skeleton.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/slider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/slider.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/spinner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/spinner.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/switch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/switch.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/table.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/tabs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/tabs.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/textarea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/textarea.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/toggle-group.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/toggle-group.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/toggle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/toggle.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/ui/tooltip.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/tooltip.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/routes/app-routes.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.app.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,46 +104,46 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "kevinmistrele"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;kevinmistrele&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/kevinmistrele/standard-web-seed.git",
-    "accountId": "8ca0db75-e11e-4c76-8137-bca3aa34ab42"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/kevinmistrele/standard-web-seed.git&quot;,
+    &quot;accountId&quot;: &quot;8ca0db75-e11e-4c76-8137-bca3aa34ab42&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 7
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
   <component name="ProjectId" id="39htaWGZmb3ZZ4sOi3YnYJSKRCX" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "RunOnceActivity.typescript.service.memoryLimit.init": "true",
-    "git-widget-placeholder": "main",
-    "javascript.preferred.runtime.type.id": "node",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "prettierjs.PrettierConfiguration.Package": "C:\\Users\\Kevin\\WebstormProjects\\standard-web-seed\\node_modules\\prettier",
-    "settings.editor.selected.configurable": "settings.javascript.prettier",
-    "ts.external.directory.path": "C:\\Users\\Kevin\\WebstormProjects\\standard-web-seed\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.typescript.service.memoryLimit.init&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;javascript.preferred.runtime.type.id&quot;: &quot;node&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;C:\\Users\\Kevin\\WebstormProjects\\standard-web-seed\\node_modules\\prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\Kevin\\WebstormProjects\\standard-web-seed\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -81,6 +155,9 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Kevin\WebstormProjects\standard-web-seed\src\screens" />
+      <recent name="C:\Users\Kevin\WebstormProjects\standard-web-seed\src\components\layout\route" />
+      <recent name="C:\Users\Kevin\WebstormProjects\standard-web-seed\src\routes" />
       <recent name="C:\Users\Kevin\WebstormProjects\standard-web-seed\src\features\users\hooks" />
       <recent name="C:\Users\Kevin\WebstormProjects\standard-web-seed\src\application\utils" />
     </key>
@@ -100,6 +177,7 @@
       <option name="presentableId" value="Default" />
       <updated>1771160193389</updated>
       <workItem from="1771160194429" duration="4263000" />
+      <workItem from="1771237170141" duration="6930000" />
     </task>
     <servers />
   </component>
