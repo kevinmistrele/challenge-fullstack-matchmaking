@@ -4,92 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4750732b-26ec-47c6-8a85-0d70aecd543d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/application/services/auth-service.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/services/logger/index.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/services/logger/types.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/services/token-storage.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/application/store/slices/app-slice.test.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/route/app-layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/route/auth-layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/layout/route/error-fallback.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/guards/auth-guard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/guards/guest-guard.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/index.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/routes/route-paths.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/auth/login.screen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/screens/dashboard/dashboard.screen.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/mocks/handlers.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/mocks/server.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/setup.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="4750732b-26ec-47c6-8a85-0d70aecd543d" name="Changes" comment="remove react.svg">
+      <change afterPath="$PROJECT_DIR$/.github/workflows/ci.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DEVELOPER_GUIDE.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/api/client.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/api/client.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/providers/QueryProvider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/providers/QueryProvider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/providers/app-provider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/providers/app-provider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/store/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/store/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/application/store/slices/app-slice.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/application/store/slices/app-slice.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/assets/react.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/accordion.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/accordion.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/alert-dialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/alert-dialog.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/alert.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/alert.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/avatar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/avatar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/badge.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/badge.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/breadcrumb.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/breadcrumb.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/button-group.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button-group.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/calendar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/calendar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/carousel.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/carousel.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/chart.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/chart.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/checkbox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/checkbox.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/combobox.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/combobox.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/command.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/command.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/context-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/context-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/dialog.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/dialog.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/drawer.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/drawer.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/dropdown-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/dropdown-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/empty.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/empty.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/field.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/field.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/form.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/form.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/hover-card.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/hover-card.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/input-group.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/input-group.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/input-otp.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/input-otp.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/input.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/input.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/item.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/item.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/kbd.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/kbd.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/label.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/label.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/menubar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/menubar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/native-select.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/native-select.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/navigation-menu.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/navigation-menu.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/pagination.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/pagination.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/popover.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/popover.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/progress.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/progress.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/radio-group.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/radio-group.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/resizable.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/resizable.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/scroll-area.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/scroll-area.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/select.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/select.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/separator.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/separator.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/sheet.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/sheet.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/skeleton.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/skeleton.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/slider.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/slider.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/spinner.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/spinner.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/switch.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/switch.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/table.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/table.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/tabs.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/tabs.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/textarea.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/textarea.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/toggle-group.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/toggle-group.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/toggle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/toggle.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/ui/tooltip.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/ui/tooltip.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/routes/app-routes.tsx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.app.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.app.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,6 +18,13 @@
     <persistenceIdMap>
       <entry key="_C:/Users/Kevin/WebstormProjects/standard-web-seed" value="39htaWGZmb3ZZ4sOi3YnYJSKRCX" />
     </persistenceIdMap>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="GitHub Workflow" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -177,12 +102,314 @@
       <option name="presentableId" value="Default" />
       <updated>1771160193389</updated>
       <workItem from="1771160194429" duration="4263000" />
-      <workItem from="1771237170141" duration="6930000" />
+      <workItem from="1771237170141" duration="7468000" />
+      <workItem from="1771256786330" duration="578000" />
     </task>
+    <task id="LOCAL-00001" summary="refactor: standardize import statements and formatting across components">
+      <option name="closed" value="true" />
+      <created>1771244794137</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1771244794137</updated>
+    </task>
+    <task id="LOCAL-00002" summary="feat: add setInitialized reducer to manage app initialization state">
+      <option name="closed" value="true" />
+      <created>1771244808812</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1771244808812</updated>
+    </task>
+    <task id="LOCAL-00003" summary="test: add unit tests for app slice reducer and setInitialized action">
+      <option name="closed" value="true" />
+      <created>1771244818061</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1771244818061</updated>
+    </task>
+    <task id="LOCAL-00004" summary="refactor: standardize quotes and formatting in accordion, alert, and alert-dialog components">
+      <option name="closed" value="true" />
+      <created>1771244829618</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1771244829618</updated>
+    </task>
+    <task id="LOCAL-00005" summary="feat: implement routing with RouterProvider in App component">
+      <option name="closed" value="true" />
+      <created>1771244839105</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1771244839105</updated>
+    </task>
+    <task id="LOCAL-00006" summary="feat: add AppLayout component for sidebar and main content structure">
+      <option name="closed" value="true" />
+      <created>1771244843619</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1771244843619</updated>
+    </task>
+    <task id="LOCAL-00007" summary="feat: wrap children in ErrorBoundary for improved error handling">
+      <option name="closed" value="true" />
+      <created>1771244850791</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1771244850791</updated>
+    </task>
+    <task id="LOCAL-00008" summary="feat: wrap children in ErrorBoundary for improved error handling">
+      <option name="closed" value="true" />
+      <created>1771244872415</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1771244872415</updated>
+    </task>
+    <task id="LOCAL-00009" summary="feat: add logging and authentication services with API interceptors">
+      <option name="closed" value="true" />
+      <created>1771244880224</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1771244880224</updated>
+    </task>
+    <task id="LOCAL-00010" summary="feat: implement logging service and API interceptors for enhanced error handling">
+      <option name="closed" value="true" />
+      <created>1771244884929</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1771244884929</updated>
+    </task>
+    <task id="LOCAL-00011" summary="feat: add AuthService for managing authentication and token handling">
+      <option name="closed" value="true" />
+      <created>1771244888643</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1771244888643</updated>
+    </task>
+    <task id="LOCAL-00012" summary="feat: enhance API client with authentication and error handling interceptors">
+      <option name="closed" value="true" />
+      <created>1771244893191</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1771244893191</updated>
+    </task>
+    <task id="LOCAL-00013" summary="feat: add logging service and API mock handlers for testing">
+      <option name="closed" value="true" />
+      <created>1771244901166</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1771244901166</updated>
+    </task>
+    <task id="LOCAL-00014" summary="feat: add logger service and API mock handlers for testing">
+      <option name="closed" value="true" />
+      <created>1771244905662</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1771244905662</updated>
+    </task>
+    <task id="LOCAL-00015" summary="feat: add logger service, API mock handlers, and route definitions">
+      <option name="closed" value="true" />
+      <created>1771244910768</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1771244910768</updated>
+    </task>
+    <task id="LOCAL-00016" summary="feat: add API mock handlers for user listing and login simulation">
+      <option name="closed" value="true" />
+      <created>1771244943261</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1771244943261</updated>
+    </task>
+    <task id="LOCAL-00017" summary="feat: implement logger service and add routing configuration">
+      <option name="closed" value="true" />
+      <created>1771244948504</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1771244948504</updated>
+    </task>
+    <task id="LOCAL-00018" summary="feat: add redux-saga middleware to store configuration">
+      <option name="closed" value="true" />
+      <created>1771244971384</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1771244971384</updated>
+    </task>
+    <task id="LOCAL-00019" summary="feat: add logging interface, server setup, and route definitions">
+      <option name="closed" value="true" />
+      <created>1771244978078</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1771244978078</updated>
+    </task>
+    <task id="LOCAL-00020" summary="feat: add logging interface, server setup, route definitions, and token storage">
+      <option name="closed" value="true" />
+      <created>1771244983694</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1771244983694</updated>
+    </task>
+    <task id="LOCAL-00021" summary="fix: update comments for QueryProvider to improve clarity and language consistency">
+      <option name="closed" value="true" />
+      <created>1771244991320</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1771244991320</updated>
+    </task>
+    <task id="LOCAL-00022" summary="docs: add testing strategy section to README.md">
+      <option name="closed" value="true" />
+      <created>1771245017625</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1771245017625</updated>
+    </task>
+    <task id="LOCAL-00023" summary="feat: add logging provider interface, server setup, route definitions, and token storage">
+      <option name="closed" value="true" />
+      <created>1771245024348</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1771245024348</updated>
+    </task>
+    <task id="LOCAL-00024" summary="feat: add server setup with MSW and request handlers">
+      <option name="closed" value="true" />
+      <created>1771245027873</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1771245027873</updated>
+    </task>
+    <task id="LOCAL-00025" summary="feat: add logging provider interface and token storage implementation">
+      <option name="closed" value="true" />
+      <created>1771245033408</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1771245033408</updated>
+    </task>
+    <task id="LOCAL-00026" summary="feat: add logging provider interface and token storage implementation">
+      <option name="closed" value="true" />
+      <created>1771245037567</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1771245037567</updated>
+    </task>
+    <task id="LOCAL-00027" summary="feat: update TypeScript configuration for testing support">
+      <option name="closed" value="true" />
+      <created>1771245043253</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1771245043253</updated>
+    </task>
+    <task id="LOCAL-00028" summary="feat: add logging provider interface and update project configuration for testing">
+      <option name="closed" value="true" />
+      <created>1771245047964</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1771245047964</updated>
+    </task>
+    <task id="LOCAL-00029" summary="feat: add Playwright testing setup and configuration files">
+      <option name="closed" value="true" />
+      <created>1771245053682</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1771245053682</updated>
+    </task>
+    <task id="LOCAL-00030" summary="feat: update workspace configuration with recent file changes and settings">
+      <option name="closed" value="true" />
+      <created>1771245057811</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1771245057811</updated>
+    </task>
+    <task id="LOCAL-00031" summary="feat: add testing scripts and dependencies for Vitest and Playwright">
+      <option name="closed" value="true" />
+      <created>1771245066333</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1771245066333</updated>
+    </task>
+    <task id="LOCAL-00032" summary="feat: update .gitignore to include Playwright test results and cache files">
+      <option name="closed" value="true" />
+      <created>1771245070788</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1771245070788</updated>
+    </task>
+    <task id="LOCAL-00033" summary="feat: add Playwright configuration files and project settings">
+      <option name="closed" value="true" />
+      <created>1771245079000</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1771245079000</updated>
+    </task>
+    <task id="LOCAL-00034" summary="remove react.svg">
+      <option name="closed" value="true" />
+      <created>1771245090716</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1771245090716</updated>
+    </task>
+    <option name="localTasksCounter" value="35" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="feat: wrap children in ErrorBoundary for improved error handling" />
+    <MESSAGE value="feat: add logging and authentication services with API interceptors" />
+    <MESSAGE value="feat: implement logging service and API interceptors for enhanced error handling" />
+    <MESSAGE value="feat: add AuthService for managing authentication and token handling" />
+    <MESSAGE value="feat: enhance API client with authentication and error handling interceptors" />
+    <MESSAGE value="feat: add logging service and API mock handlers for testing" />
+    <MESSAGE value="feat: add logger service and API mock handlers for testing" />
+    <MESSAGE value="feat: add logger service, API mock handlers, and route definitions" />
+    <MESSAGE value="feat: add API mock handlers for user listing and login simulation" />
+    <MESSAGE value="feat: implement logger service and add routing configuration" />
+    <MESSAGE value="feat: add redux-saga middleware to store configuration" />
+    <MESSAGE value="feat: add logging interface, server setup, and route definitions" />
+    <MESSAGE value="feat: add logging interface, server setup, route definitions, and token storage" />
+    <MESSAGE value="fix: update comments for QueryProvider to improve clarity and language consistency" />
+    <MESSAGE value="docs: add testing strategy section to README.md" />
+    <MESSAGE value="feat: add logging provider interface, server setup, route definitions, and token storage" />
+    <MESSAGE value="feat: add server setup with MSW and request handlers" />
+    <MESSAGE value="feat: add logging provider interface and token storage implementation" />
+    <MESSAGE value="feat: update TypeScript configuration for testing support" />
+    <MESSAGE value="feat: add logging provider interface and update project configuration for testing" />
+    <MESSAGE value="feat: add Playwright testing setup and configuration files" />
+    <MESSAGE value="feat: add testing scripts and dependencies for Vitest and Playwright" />
+    <MESSAGE value="feat: update .gitignore to include Playwright test results and cache files" />
+    <MESSAGE value="feat: add Playwright configuration files and project settings" />
+    <MESSAGE value="remove react.svg" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove react.svg" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
