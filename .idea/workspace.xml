@@ -4,9 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4750732b-26ec-47c6-8a85-0d70aecd543d" name="Changes" comment="feat: add @vitest/coverage-v8 dependency for improved test coverage reporting">
+    <list default="true" id="4750732b-26ec-47c6-8a85-0d70aecd543d" name="Changes" comment="feat: update Vite configuration to exclude e2e tests from coverage reporting">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -105,15 +105,7 @@
       <workItem from="1771256786330" duration="1856000" />
       <workItem from="1771259418032" duration="2741000" />
       <workItem from="1771294501348" duration="197000" />
-      <workItem from="1771296266384" duration="1861000" />
-    </task>
-    <task id="LOCAL-00006" summary="feat: add AppLayout component for sidebar and main content structure">
-      <option name="closed" value="true" />
-      <created>1771244843619</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1771244843619</updated>
+      <workItem from="1771296266384" duration="1923000" />
     </task>
     <task id="LOCAL-00007" summary="feat: wrap children in ErrorBoundary for improved error handling">
       <option name="closed" value="true" />
@@ -499,14 +491,21 @@
       <option name="project" value="LOCAL" />
       <updated>1771296325492</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="feat: update Vite configuration to exclude e2e tests from coverage reporting">
+      <option name="closed" value="true" />
+      <created>1771298865759</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1771298865759</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: update TypeScript configuration for testing support" />
     <MESSAGE value="feat: add logging provider interface and update project configuration for testing" />
     <MESSAGE value="feat: add Playwright testing setup and configuration files" />
     <MESSAGE value="feat: add testing scripts and dependencies for Vitest and Playwright" />
@@ -531,7 +530,8 @@
     <MESSAGE value="feat: refactor API client to improve error handling and token management logic" />
     <MESSAGE value="feat: update workspace configuration to include recent changes in task summaries and import statements" />
     <MESSAGE value="feat: add @vitest/coverage-v8 dependency for improved test coverage reporting" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: add @vitest/coverage-v8 dependency for improved test coverage reporting" />
+    <MESSAGE value="feat: update Vite configuration to exclude e2e tests from coverage reporting" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: update Vite configuration to exclude e2e tests from coverage reporting" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
