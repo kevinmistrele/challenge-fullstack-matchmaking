@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "baseUrl": "../..",
+    "baseUrl": ".",
     "paths": {
       "@/*": ["./src/*"],
       "@application/*": ["./src/application/*"],
@@ -37,7 +37,5 @@
     /* Testing */
     "types": ["vite/client", "vitest/globals", "@testing-library/jest-dom"]
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }
