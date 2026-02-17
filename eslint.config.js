@@ -8,7 +8,15 @@ import eslintConfigPrettier from 'eslint-config-prettier';
 import prettierPlugin from 'eslint-plugin-prettier';
 
 export default tseslint.config(
-  { ignores: ['dist'] },
+  {
+    ignores: [
+      '**/node_modules/**',
+      '**/dist/**',
+      '**/coverage/**',
+      '**/playwright-report/**',
+      '**/.idea/**',
+    ],
+  },
 
   // 🔒 STRICT DOMAIN RULES
   {
