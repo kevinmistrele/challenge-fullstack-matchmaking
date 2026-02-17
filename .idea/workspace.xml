@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4750732b-26ec-47c6-8a85-0d70aecd543d" name="Changes" comment="feat: update workspace configuration to include recent changes in task summaries and import statements" />
+    <list default="true" id="4750732b-26ec-47c6-8a85-0d70aecd543d" name="Changes" comment="feat: add @vitest/coverage-v8 dependency for improved test coverage reporting">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vite.config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/vite.config.ts" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -102,14 +105,7 @@
       <workItem from="1771256786330" duration="1856000" />
       <workItem from="1771259418032" duration="2741000" />
       <workItem from="1771294501348" duration="197000" />
-    </task>
-    <task id="LOCAL-00005" summary="feat: implement routing with RouterProvider in App component">
-      <option name="closed" value="true" />
-      <created>1771244839105</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1771244839105</updated>
+      <workItem from="1771296266384" duration="1861000" />
     </task>
     <task id="LOCAL-00006" summary="feat: add AppLayout component for sidebar and main content structure">
       <option name="closed" value="true" />
@@ -495,14 +491,21 @@
       <option name="project" value="LOCAL" />
       <updated>1771294654831</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="feat: add @vitest/coverage-v8 dependency for improved test coverage reporting">
+      <option name="closed" value="true" />
+      <created>1771296325492</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1771296325492</updated>
+    </task>
+    <option name="localTasksCounter" value="55" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="feat: add logging provider interface and token storage implementation" />
     <MESSAGE value="feat: update TypeScript configuration for testing support" />
     <MESSAGE value="feat: add logging provider interface and update project configuration for testing" />
     <MESSAGE value="feat: add Playwright testing setup and configuration files" />
@@ -527,7 +530,8 @@
     <MESSAGE value="feat: update workspace configuration to include recent changes in type definitions and import statements" />
     <MESSAGE value="feat: refactor API client to improve error handling and token management logic" />
     <MESSAGE value="feat: update workspace configuration to include recent changes in task summaries and import statements" />
-    <option name="LAST_COMMIT_MESSAGE" value="feat: update workspace configuration to include recent changes in task summaries and import statements" />
+    <MESSAGE value="feat: add @vitest/coverage-v8 dependency for improved test coverage reporting" />
+    <option name="LAST_COMMIT_MESSAGE" value="feat: add @vitest/coverage-v8 dependency for improved test coverage reporting" />
   </component>
   <component name="github-copilot-workspace">
     <instructionFileLocations>
